@@ -1,0 +1,34 @@
+---
+title: "test"
+author: "Kenneth Chen"
+date: "12/26/2019"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Size of the page table 
+
+I know that size of the flat page table is actually the size of the physical memory. We calculate from the vitural memory and page size and how many entry it has. But it all depends on the entry size. But in terms of the program, and how it access to the main memory, I'm still not clear. I need to revisit this concept in details. "How many entry it has" is a wrong concept. It's clear now. [2019 Dec 26, Thursday]  
+
+It'd be much better if I have a drawing. But it takes time to make a nice drawing. So I'll try to explain in detail as much as I could here. There are several nomenclature that you'd need to be aware of when it comes to page table.  
+
+1. Virtual Memory  
+2. Physical Memory  
+3. Page size  
+4. Page frame  
+5. Page entry  
+6. Page table  
+
+#### Virtual Memory (VM) and Physical Memory (PM)  
+
+Typically physical memory (RAM, DRAM) is where all programs and files currently in use, are stored so that there won't be any latency. Usually physical memory has 500MB, 1GB, 2GB. But physical memory capacity never exceeded the capacity of hard drive.  
+Hard drive comes in 256GB, 500GB, 1T, 2TB these days. So hard drive store all static data, eg, files, movies, programs etc. However physical memory cannot store any files bigger than their capacity. They have to purge all old data if they require new data to cache. Imagine, you're playing a video game that is 500GB large. But there is no way to cache the entire 500GB in any memory. When you play a video game, it's just displaying the event that you are currently on, i.e., retrieving necessary components of the video game from the Hard Drive and store in Physical memory and CPU executes the action. 
+In this scenario, hard drive behaves like a virtual memory that holds your 500GB video game. When the data is required for the physical memory, the data from hard drive is transferred to the physical memory. So virtual memory is an abstraction or logical memory. You have to think of certain chunk of hard drive as virtual memory. Of course it's not a real memory per se. It's just an abstraction. That's why it is sometimes called logical memory. 
+Ok the question is, how do we transfer which data to which physical memory. You can imagine there must be some kind of mapping required from VM to PM. There's where a page table comes into play. 
+
+#### Page Size 
