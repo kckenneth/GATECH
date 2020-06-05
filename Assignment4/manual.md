@@ -40,7 +40,7 @@ A few examples were shown here.
 ```
 
 <p align="center">
-<img src="img/example" width="300"></p>
+<img src="img/example.png" width="300"></p>
 <p align="center">Figure 2. SDPEncryptor app encrypting user defined messages</p>
 
 ### Error on Invalid inputs
@@ -55,6 +55,6 @@ A key number must be between 1 and 26 including.
 An increment number must be between 1 and 26 including. 
 
 <p align="center">
-<img src="img/error" width="500"></p>
+<img src="img/error.png" width="500"></p>
 <p align="center">Figure 3. Invalid inputs</p>
 
