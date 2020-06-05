@@ -20,7 +20,7 @@ A simple implementation of alphabetical substitution in a given message by a shi
 	* Encrypted message
 
 <p align="center">
-<img src="img/sdpencryptor.png" width="200"></p>
+<img src="img/sdpencryptor.png" width="300"></p>
 <p align="center">Figure 1. SDPEncryptor app on android phone</p>
 
 ### Example
@@ -40,7 +40,7 @@ A few examples were shown here.
 ```
 
 <p align="center">
-<img src="img/example.png" width="600"></p>
+<img src="img/example.png" width="700"></p>
 <p align="center">Figure 2. SDPEncryptor app encrypting user defined messages</p>
 
 ### Error on Invalid inputs
@@ -55,6 +55,6 @@ A key number must be between 1 and 26 including.
 An increment number must be between 1 and 26 including. 
 
 <p align="center">
-<img src="img/error.png" width="600"></p>
+<img src="img/error.png" width="700"></p>
 <p align="center">Figure 3. Invalid inputs</p>
 
