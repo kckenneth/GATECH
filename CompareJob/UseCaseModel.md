@@ -13,7 +13,7 @@ group: Team77
 ## 1 Use Case Diagram
 
 <p align="center">
-<img src="img/usecasemodel.png" width="300"></p>
+<img src="img/usecasemodel.png" width="600"></p>
 <p align="center">Figure. Use Case Model for Compare Job app</p>
 
 ## 2 Use Case Descriptions
